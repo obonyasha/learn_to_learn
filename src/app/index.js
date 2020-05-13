@@ -1,0 +1,1 @@
+import _ from '../public/styles/style.css';
