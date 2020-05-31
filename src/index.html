@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Научиться учиться</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css%>">
 </head>
 <body>
 <div class="page">
@@ -15,7 +15,7 @@
         <div class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
             <a href="#" class="header__link">Узнать &rarr;</a>
         </div>
-        <img src="images/two_again.png" class="header__main-illustration" alt="загрузка изображения">
+        <img src="<%=require('./images/two_again.png').default%>" class="header__main-illustration" alt="загрузка изображения">
         <div class="header__square-pic"></div>
     </header>
 
@@ -36,27 +36,27 @@
             <p class="section-subtitle">Пять практик от Барбары Оакли</p>
             <div class="cards">
                 <div class="cards__item">
-                    <img src="images/attention.png" class="cards__image" alt="загрузка изображения">
+                    <img src="<%=require('./images/attention.png').default%>" class="cards__image" alt="загрузка изображения">
                     <h2 class="cards__title">Два вида внимания</h2>
                     <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
                 </div>
                 <div class="cards__item">
-                    <img src="images/recall.png" class="cards__image" alt="загрузка изображения">
+                    <img src="<%=require('./images/recall.png').default%>" class="cards__image" alt="загрузка изображения">
                     <h2 class="cards__title">Recall</h2>
                     <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
                 </div>
                 <div class="cards__item">
-                    <img src="images/interliving.png" class="cards__image" alt="загрузка изображения">
+                    <img src="<%=require('./images/interliving.png').default%>" class="cards__image" alt="загрузка изображения">
                     <h2 class="cards__title">Интерливинг</h2>
                     <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
                 </div>
                 <div class="cards__item">
-                    <img src="images/question.png" class="cards__image" alt="загрузка изображения">
+                    <img src="<%=require('./images/question.png').default%>" class="cards__image" alt="загрузка изображения">
                     <h2 class="cards__title">Вопросы</h2>
                     <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
                 </div>
                 <div class="cards__item">
-                    <img src="images/competence.png" class="cards__image" alt="загрузка изображения">
+                    <img src="<%=require('./images/competence.png').default%>" class="cards__image" alt="загрузка изображения">
                     <h2 class="cards__title">Иллюзия компетентности</h2>
                     <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
                 </div>
@@ -137,7 +137,7 @@
                 <h2 class="khan__quote-author">Джордж Лукас</h2>
                 <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
                 <div class="khan__book-conteiner">
-                    <img src="images/book.jpg" class="khan__book-pic" alt="загрузка изображения">
+                    <img src="<%=require('./images/book.jpg').default%>" class="khan__book-pic" alt="загрузка изображения">
                     <a href="#" class="khan__book-link">Купить книгу &rarr;</a>
                 </div>
             </div>
@@ -188,17 +188,17 @@
                     <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
                 </div>
             </div>
-            <img src="images/triangle.svg" class="kaufman__triangle-style" alt="загрузка изображения">
+            <img src="<%=require('./images/triangle.svg').default%>" class="kaufman__triangle-style" alt="загрузка изображения">
         </section>
 
         <section class="resources">
             <h2 class="section-title">Полезные ресурсы</h2>
             <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
             <div class="resources__logo-zone">
-                <img src="images/logo/arzamas.svg" class="resources__logo" alt="загрузка изображения">
-                <img src="images/logo/n1.svg" class="resources__logo" alt="загрузка изображения">
-                <img src="images/logo/strelka.svg" class="resources__logo" alt="загрузка изображения">
-                <img src="images/logo/polka.svg" class="resources__logo" alt="загрузка изображения">
+                <img src="<%=require('./images/logo/arzamas.svg').default%>" class="resources__logo" alt="загрузка изображения">
+                <img src="<%=require('./images/logo/n1.svg').default%>" class="resources__logo" alt="загрузка изображения">
+                <img src="<%=require('./images/logo/strelka.svg').default%>" class="resources__logo" alt="загрузка изображения">
+                <img src="<%=require('./images/logo/polka.svg').default%>" class="resources__logo" alt="загрузка изображения">
             </div>
         </section>
     </main>
@@ -220,14 +220,14 @@
             <div class="footer__column footer__column_content_social">
                 <p class="footer__column-heading">Соцсети</p>
                 <div class="footer__column-links">
-                    <a href="https://www.facebook.com/yandex.praktikum/"  target="_blank"><img src="images/facebook_white.svg" class="footer__social-icons" alt="Загрузка изображения"> Facebook</a>
-                    <a href="https://vk.com/yandex.praktikum" target="_blank"><img src="images/vk_white.svg" class="footer__social-icons" alt="Загрузка изображения"> ВКонтакте</a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram_white.svg" class="footer__social-icons" alt="Загрузка изображения"> Instagram</a>
+                    <a href="https://www.facebook.com/yandex.praktikum/"  target="_blank"><img src="<%=require('./images/facebook_white.svg').default%>" class="footer__social-icons" alt="Загрузка изображения"> Facebook</a>
+                    <a href="https://vk.com/yandex.praktikum" target="_blank"><img src="<%=require('./images/vk_white.svg').default%>" class="footer__social-icons" alt="Загрузка изображения"> ВКонтакте</a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="<%=require('./images/instagram_white.svg').default%>" class="footer__social-icons" alt="Загрузка изображения"> Instagram</a>
                 </div>
             </div>
         </div>
     </footer>
 </div>
-
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>
